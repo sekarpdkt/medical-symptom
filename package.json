@@ -1,0 +1,46 @@
+{
+  "name": "GPSLogger-Web",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "Sekar S",
+  "main": "fightCorona.js",
+  "scripts": {
+    "start": "nodemon fightCorona.js"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "db/*",
+      "config/*",
+      "static/*"
+    ]
+  },
+  "dependencies": {
+    "@google-cloud/translate": "^5.3.0",
+    "argon2": "^0.26.0",
+    "argon2-browser": "^1.13.0",
+    "axios": "^0.19.2",
+    "config": "^3.2.5",
+    "cookie-parser": "^1.4.4",
+    "csvtojson": "^2.0.10",
+    "debug": "~4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "formidable": "^1.2.1",
+    "google-translate-api": "^2.3.0",
+    "http-errors": "~1.7.3",
+    "https-proxy-agent": "^5.0.0",
+    "ioredis": "^4.14.1",
+    "jsonwebtoken": "^8.5.1",
+    "kafka-node": "^5.0.0",
+    "morgan": "^1.9.1",
+    "node-json-db": "^1.0.3",
+    "nodemon": "^1.19.4",
+    "pug": "^2.0.4",
+    "simple-oauth2": "^3.3.0",
+    "translation-google": "^0.2.1",
+    "tunnel": "0.0.6",
+    "unzipper": "^0.10.5",
+    "uuid": "^7.0.0"
+  }
+}

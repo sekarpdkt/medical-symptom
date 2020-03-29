@@ -1,0 +1,34 @@
+{
+	"downloadDirName": "files",
+    "stdCnnfig":{
+        "jwtKey" :"jwtSecretKey",
+        "uploadDirectory" :"./uploads/",
+        "jsonDBDirectory" :"./db/",
+        "maxGroupPerUser":5,
+        "maxContactPerUser":15,
+        "maxContactPerGroup":6,
+        "URI":"http://localhost:3000"
+    } ,
+    "redisInfo": {
+		"CLUSTER_DETAILS": [{
+			"port": 6379,
+			"host": "localhost"
+		}],
+		"password": "mypass"
+	},
+	"kafkaInfo": [
+		"localhost:9092"
+	],
+	"googleAPIInfo": {
+		"client_id": "YOUR_CLIENT_ID",
+		"client_secret": "YOUR_CLIENT_SECRET"
+	},
+	"argon2": {
+        "salt":"somesalt",
+        "hashLength": 32,
+        "timeCost": 8,
+        "memoryCost": 4096,
+        "parallelism": 1,
+        "type": 2        
+	}
+}

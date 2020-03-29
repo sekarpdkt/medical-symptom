@@ -1,0 +1,289 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+    font-size: large;
+    white-space: nowrap;
+    width: 100%;
+}
+
+
+.full-height {
+    height: 100%;
+}
+.app_button button{
+    padding:0;
+    text-align: center;
+}
+.fa-circle, .fa-circle-o{
+    font-size:8px;
+}
+
+#map {
+    height: 100%;
+    width:100%;
+}
+
+th, td {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#https://github.com/Leaflet/Leaflet/issues/4686
+.leaflet-fade-anim .leaflet-tile,.leaflet-zoom-anim .leaflet-zoom-animated { will-change:auto !important; }
+
+img.image-icon  {
+    height: 32px !important;
+    width: 32px !important;
+    border-radius: 50%;
+}
+img.image-icon48  {
+    height: 48px !important;
+    width: 48px !important;
+    border-radius: 50%;
+}
+img.image-icon-btn  {
+    height: 32px !important;
+    width: 32px !important;
+    border-radius: 50%;
+}
+img.image-icon16  {
+    height: 16px !important;
+    width: 16px !important;
+    border-radius: 50%;
+}
+img.image_icon_options{
+    height: 32px !important;
+    width: 32px !important;
+    #border-radius: 20px;    
+}
+img.image-bottomCorner{
+    position: absolute; 
+    height: 24px !important;
+    width: 24px !important;
+    left: 100%;
+    top: 100%;    
+    transform: translate(-125%,-125%);
+}
+.addBottomPadding{
+    padding-bottom: 5px;
+}
+.addTopPadding{
+    padding-top: 15px;    
+}
+div.timeSlider {
+    position: absolute; 
+    height: 85%;
+    left: 95%;
+    top: 5%;
+    z-index: 2000;
+} 
+
+div.menuIcon {
+    position: absolute; 
+    height: 128px;
+    width: 64px;
+    left: 1px;
+    top: 14px;
+    z-index: 2200;
+} 
+div.footer {
+    position: absolute; 
+    left: 0px;
+    top: 0px;
+    display: none;
+    text-align: left;
+    #transform: translate(-50%,-100%);
+    color: black; 
+    font-weight: bold; 
+    width: auto;
+    white-space: nowrap;
+    padding: 10px;
+    z-index: 1000;
+    font-size: large;
+    border-radius: 25px;
+    background-color: #4C417768;
+    #background-image: linear-gradient(315deg, #2E86AB7F 0%, #4C41777F 25%, #2741627f 50%, #4C41777F 75%,#2E86AB7F 100%);    
+}
+div.userInfo {
+    text-align: left;
+    font-weight: bold; 
+    color: #DFDFDFDF; 
+    white-space: nowrap;
+    border-radius: 25px;
+    z-index: 1010;
+    background-color: #310E68DF;
+    padding: 5px;
+}
+
+div.groupList {
+    position: absolute; 
+    left: 0%;}
+
+div.options {
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+    border-radius: 25px;
+    display: none;
+    text-align: left;
+    text-wrap: none;
+    transform: translate(-50%,-50%);
+    color: black; 
+    font-weight: bold; 
+    padding: 20px;
+    z-index: 1020;
+    #background-color: #c73e1d;
+    #background-image: linear-gradient(315deg, #c73e1d 0%, #a23b72 37%, #2e86ab 100%);
+    background-image: linear-gradient(315deg, #2E86AB7F 0%, #4C41777F 25%, #2741627f 50%, #4C41777F 75%,#2E86AB7F 100%);    
+}
+.textBox {
+    padding: 12px;
+    text-align: center;
+    font-size: large;
+    color: black; 
+    font-weight: bold; 
+    width:75%;
+    white-space: nowrap;
+    border-radius: 25px;
+    border-style: none;
+    z-index: 1010;
+    background-color: #F0F0F0DF;
+    padding: 15px;
+}
+.date {
+    padding: 12px;
+    text-align: center;
+    color: black; 
+    font-weight: bold; 
+    width:75%;
+    color: #DFDFDFDF; 
+    white-space: nowrap;
+    border-radius: 25px;
+    border-style: none;
+    z-index: 1010;
+    background-color: #310E68DF;
+    padding: 5px;
+}
+
+
+.noUi-tooltip {
+    display: block;
+}
+.noUi-active .noUi-tooltip {
+    display: block;
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 0px;
+  cursor: pointer;
+    font-weight: bold; 
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmarkBlue {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    #margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 25px;
+    padding: 16px;
+    position: fixed;
+    z-index: 2100;
+    left: 50%;
+    bottom: 30px;
+    font-weight: bold; 
+    transform: translate(-50%,0%);
+    
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}  
+

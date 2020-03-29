@@ -1,0 +1,42 @@
+<script>
+// Simulate a mouse click:
+    function redirect(){
+    
+        try{
+            setTimeout(function() {window.location.href="/mygroup/location"},0);
+        }
+        catch(e){
+
+            try{
+                setTimeout(function() {location.assign("/mygroup/location")},0);
+                
+            }
+            catch(e){
+
+
+                try{
+                    setTimeout(function() {location="/mygroup/location"},0);
+
+                    ;
+                }
+                catch(e){
+
+
+                    try{
+                        setTimeout(function() {window.location.replace("/mygroup/location")},0);
+                        }
+                    catch(e){}
+                }
+            }
+        }
+    }
+    redirect();
+    
+window.onload = function exampleFunction() { 
+    redirect();
+    // Function to be executed 
+} 
+
+// Simulate an HTTP redirect:
+//
+</script>

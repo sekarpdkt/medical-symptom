@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+
+  gpslogger:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    hostname: gpslogger
+    image: gpslogger/gpslogger:latest
+    container_name: gpslogger
+    labels:
+      NAME: gpslogger
+
+
+
