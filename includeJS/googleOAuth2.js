@@ -9,8 +9,8 @@ const jwtExpirySeconds = 1800
 
 const oauth2 = require('simple-oauth2').create({
   client: {
-    id: config.googleAPIInfo.client_id,//"473688800612-o50qhkeglt7gm93pshh3l1uahiprltnc.apps.googleusercontent.com",
-    secret: config.googleAPIInfo.client_secret //"H_xwK9yBMHAqI-4kdhZV-cgM"
+    id: config.googleAPIInfo.client_id,
+    secret: config.googleAPIInfo.client_secret 
   },
   auth: {
     authorizeHost: 'https://accounts.google.com',
