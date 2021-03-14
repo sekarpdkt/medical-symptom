@@ -36,7 +36,7 @@
     "morgan": "^1.9.1",
     "node-json-db": "^1.0.3",
     "nodemon": "^1.19.4",
-    "pug": "^2.0.4",
+    "pug": ">=3.0.1",
     "simple-oauth2": "^3.3.0",
     "translation-google": "^0.2.1",
     "tunnel": "0.0.6",
